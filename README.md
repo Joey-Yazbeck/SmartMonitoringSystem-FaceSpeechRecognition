@@ -1,4 +1,4 @@
-# Database_Driven_Live_camera_Face_Recognition
+# SmartMonitoringSystem-FaceSpeechRecognition app
 
 This is Face Recogniton connected to a Database which gets the Face Name and Image Name from the Database and compares the Face in the live video with the images stored in the local storage using python.
 
