@@ -6,6 +6,7 @@ import numpy
 import automated_email2
 from datetime import date
 
+imageFolderPath = "..\\my-app\\src\\images\\"
 # This will return video from the first webcam on your computer
 video_capture = cv2.VideoCapture(0)
 
@@ -33,7 +34,7 @@ for r in rows:
     # )
     known_face_encodings.append(
         face_recognition.face_encodings(
-            face_recognition.load_image_file("..\\my-app\\src\\images\\" + r[0])
+            face_recognition.load_image_file(imageFolderPath + r[0])
         )[0]
     )
     known_face_names.append(r[1])

@@ -3,6 +3,8 @@ import datetime
 import config
 import psycopg2
 
+imageFolderPath = "..\\my-app\\src\\images\\"
+
 
 def capture_image():
     # Open the default camera (index 0)
@@ -26,7 +28,7 @@ def capture_image():
 
         # Save the captured image to disk
         # image_path = "captured_image.jpg"
-        image_path = r"..\\my-app\\src\\images\\" + image_filename
+        image_path = imageFolderPath + image_filename
         cv2.imwrite(image_path, frame)
         print("Image saved successfully:", image_path)
 
